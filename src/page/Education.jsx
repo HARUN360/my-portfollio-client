@@ -1,8 +1,9 @@
+import MyEducation from "../componets/MyEducation";
 
 const Education = () => {
     return (
         <div>
-            education
+        <MyEducation></MyEducation>
         </div>
     );
 };

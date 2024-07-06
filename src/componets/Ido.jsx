@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import { FaArtstation, FaLongArrowAltRight } from "react-icons/fa";
 import { MdScreenshotMonitor } from "react-icons/md";
 import { SiBackendless } from "react-icons/si";
@@ -5,6 +6,7 @@ import { SiBackendless } from "react-icons/si";
 const Ido = () => {
     return (
         <div className="my-12">
+            <Fade direction="down">
             <div>
                 <h3 className="text-4xl text-center font-bold">WHAT I DO</h3>
                 <p className="text-xl text-center font-bold text-[#F8B90C] my-2">My Services</p>
@@ -33,6 +35,7 @@ const Ido = () => {
                    
                 </div>
             </div>
+            </Fade>
         </div>
     );
 };
