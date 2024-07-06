@@ -3,12 +3,32 @@ import { FaCss3, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpressvpn } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
+import { Typewriter } from "react-simple-typewriter";
+import { Fade } from 'react-awesome-reveal';
 
 const MySkills = () => {
     return (
         <div >
-        <h3 className="text-4xl text-center font-bold my-6">MY SKILLS</h3>
-        <div className="bg-[#1C2229] text-white"> 
+        <Fade direction="up">
+        <h1 className='text-2xl md:text-5xl text-center font-bold md:mb-4'>
+                            {' '}
+                            <span className=''>
+                                {/* Style will be inherited from the parent element */}
+                                <Typewriter
+                                    words={['My Skills!', 'My Skills!', 'My Skills!', 'My Skills!']}
+                                    loop={5}
+                                    cursor
+                                    cursorStyle='_'
+                                    typeSpeed={70}
+                                    deleteSpeed={50}
+                                    delaySpeed={1000}
+
+                                />
+                            </span>
+            </h1>
+            </Fade>
+         <Fade direction='up'>
+        <div className=" text-white"> 
             <div className="p-10">
                 <h3 className="text-white font-bold text-3xl">Technical skills</h3>
                 <ul className="text-xl">
@@ -26,6 +46,7 @@ const MySkills = () => {
             </div>
            
         </div>
+        </Fade>
     </div>
     );
 };

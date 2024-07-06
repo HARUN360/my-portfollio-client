@@ -1,8 +1,9 @@
+import MySkills from "../componets/MySkills";
 
 const Skil = () => {
     return (
         <div>
-            dgjhgdj
+           <MySkills></MySkills>
         </div>
     );
 };
