@@ -1,12 +1,14 @@
+import { Fade } from "react-awesome-reveal";
 import { FaInternetExplorer, FaSchool } from "react-icons/fa";
 import { GiDiploma } from "react-icons/gi";
 import { MdOutlineCastForEducation } from "react-icons/md";
 
 const MyEducation = () => {
     return (
-        <div>
-            <div className="flex justify-between">
-                <div className="ml-6">
+        <div> 
+             <Fade direction="down">
+            <div className="flex flex-col lg:flex-row gap-10">
+                <div className="ml-6 lg:w-1/2">
                     <h3 className="text-4xl font-bold flex items-center gap-4 text-[#F8B416]"><MdOutlineCastForEducation></MdOutlineCastForEducation> <span>Education</span></h3>
                     <div className="ml-6 mt-3">
                         <p className="text-xl font-bold flex items-center gap-4"> <span><FaSchool /></span> <span>SSC</span></p>
@@ -19,26 +21,29 @@ const MyEducation = () => {
                     </div>
 
                 </div>
-                <div>
-                    <div>
+          
+                    <div className="lg:w-1/2">
                         <h3 className="text-4xl font-bold flex items-center gap-4 text-[#F8B416]"> <FaInternetExplorer /> <span>Experience</span></h3>
-                        <br />
+                   
    
-                        <h4 className="text-3xl  font-bold">Jr. Web Development</h4>
+                       <div className="ml-6 mt-3">
+                       <h4 className="text-3xl  font-bold">Jr. Web Development</h4>
                      
-                        <br />
-                        <p>Self-Employed / Freelance </p> 
-                      
-                        <br />
-                        <p> April 2023 - Present </p>
-                        <br />
-                       
-                        <p> Developed web applications using MongoDB, Express.js, React, Node.js, and Next.js. Built responsive UIs with React and Tailwind CSS. Created RESTful APIs and managed databases. Collaborated with clients, solved complex problems, and stayed updated with industry trends.</p>
-                        <br />
+                     <br />
+                     <p>Self-Employed / Freelance </p> 
+                   
+                     <br />
+                     <p> April 2023 - Present </p>
+                     <br />
+                    
+                     <p > Developed web applications using MongoDB, Express.js, React, Node.js, and Next.js. Built responsive UIs with React and Tailwind CSS. Created RESTful APIs and managed databases. Collaborated with clients, solved complex problems, and stayed updated with industry trends.</p>
+                     <br />
+                       </div>
                   
                     </div>
-                </div>
+             
             </div>
+            </Fade>
         </div>
     );
 };
