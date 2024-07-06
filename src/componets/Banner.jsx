@@ -11,7 +11,7 @@ const Banner = () => {
                 <Fade direction="down">
                     <img
                         src="https://i.ibb.co/KhkVwcZ/IMG-20240703-173856-1.jpg"
-                        className="max-w-sm  shadow-2xl rounded-full" />
+                        className=" w-[150px] md:max-w-sm  shadow-2xl rounded-full" />
                          </Fade>
                         <Fade direction="up">
                     <div className="text-white">

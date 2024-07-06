@@ -47,7 +47,7 @@ const Contact = () => {
 
         <h3 className="text-center text-4xl font-bold underline text-[#F8B416]">Contact Us  </h3>
 
-        <div className="flex justify-around mt-10">
+        <div className="flex flex-col lg:flex-row justify-around mt-10">
           <div className="lg:w-1/2 my-14">
             <h3 className="text-3xl text-center font-bold">Name: MD.HARUN OR ROSHID</h3>
             <h4 className="text-2xl text-center my-4 font-bold">+8801317537210</h4>
