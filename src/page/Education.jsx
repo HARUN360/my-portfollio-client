@@ -1,9 +1,12 @@
+
 import MyEducation from "../componets/MyEducation";
 
 const Education = () => {
     return (
-        <div>
-        <MyEducation></MyEducation>
+        <div className="">
+        
+                <MyEducation></MyEducation>
+        
         </div>
     );
 };

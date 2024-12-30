@@ -6,7 +6,7 @@ const Footer = () => {
           <footer className="footer bg-neutral text-neutral-content items-center p-4">
   <aside className="grid-flow-col items-center">
   
-    <p className="text-[#C75F28]  font-bold">© All Rights Reserved 2020 - 2026 | Md. Harun </p>
+    <p className="text-[#C75F28]  font-bold ">© All Rights Reserved 2020 - 2026 | Md. Harun </p>
   </aside>
   <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
     <a>

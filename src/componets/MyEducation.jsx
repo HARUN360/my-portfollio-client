@@ -1,3 +1,4 @@
+
 import { Fade } from "react-awesome-reveal";
 import { FaInternetExplorer, FaSchool } from "react-icons/fa";
 import { GiDiploma } from "react-icons/gi";
@@ -6,7 +7,7 @@ import { MdOutlineCastForEducation } from "react-icons/md";
 const MyEducation = () => {
     return (
         <div> 
-             <Fade direction="down">
+              <Fade direction="down">
             <div className="flex flex-col lg:flex-row gap-10">
                 <div className="ml-6 lg:w-1/2">
                     <h3 className="text-4xl font-bold flex items-center gap-4 text-[#F8B416]"><MdOutlineCastForEducation></MdOutlineCastForEducation> <span>Education</span></h3>

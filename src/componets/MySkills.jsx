@@ -1,16 +1,26 @@
-import { DiMongodb } from "react-icons/di";
-import { FaCss3, FaHtml5, FaNode, FaReact } from "react-icons/fa";
+
+
+
+
+
+
+
+// end
+import { Fade } from "react-awesome-reveal";
+import { FaCss3Alt, FaHtml5, FaNode, FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress } from "react-icons/si";
-import { TbBrandJavascript } from "react-icons/tb";
+import { SiExpress, SiMongodb } from "react-icons/si";
 import { Typewriter } from "react-simple-typewriter";
-import { Fade } from 'react-awesome-reveal';
+
+
 
 const MySkills = () => {
     return (
-        <div className="mt-6">
-            <Fade direction="down">
-                <h1 className='text-2xl md:text-5xl text-center font-bold md:mb-4'>
+        <div>
+             <Fade direction="down">
+             <div>
+             <h1 className='text-2xl md:text-5xl text-center font-bold md:mb-4'>
                     {' '}
                     <span className=''>
                         {/* Style will be inherited from the parent element */}
@@ -26,31 +36,117 @@ const MySkills = () => {
                         />
                     </span>
                 </h1>
+      <div className="px-5 py-14 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="card bg-[#1C222A]  shadow-4xl">
+          <figure className="px-10 pt-10">
+            
+            <p className="text-6xl text-orange-400"><FaHtml5/></p>
+          </figure>
+          <div className="card-body items-center text-center">
+            <h2 className="text-white font-bold text-4xl">HTML</h2>
+            <div className="card-actions">
+              
+            </div>
+          </div>
+        </div>
 
-                <div className=" text-white">
-                    <div className="p-10">
+        <div className="card bg-[#1C222A] shadow-4xl">
+          <figure className="px-10 pt-10">
+            
+            <p className="text-6xl text-blue-400"><FaCss3Alt/></p>
+          </figure>
+          <div className="card-body items-center text-center">
+            <h2 className="text-white font-bold text-4xl">CSS</h2>
+            <div className="card-actions">
+              
+            </div>
+          </div>
+        </div>
+        
+        <div className="card bg-[#1C222A] shadow-4xl">
+          <figure className="px-10 pt-10">
+            
+            <p className="text-6xl text-green-400"><RiTailwindCssFill/></p>
+          </figure>
+          <div className="card-body items-center text-center">
+            <h2 className="text-white font-bold text-4xl">Tailwind CSS</h2>
+            <div className="card-actions">
+              
+            </div>
+          </div>
+        </div>
+        
+        <div className="card bg-[#1C222A] shadow-4xl">
+          <figure className="px-10 pt-10">
+            
+            <p className="text-6xl text-yellow-400"><IoLogoJavascript/></p>
+          </figure>
+          <div className="card-body items-center text-center">
+            <h2 className="text-white font-bold text-4xl">Java script</h2>
+            <div className="card-actions">
+              
+            </div>
+          </div>
+        </div>
+        <div className="card bg-[#1C222A] shadow-4xl">
+          <figure className="px-10 pt-10">
+            
+            <p className="text-6xl text-blue-400"><FaReact/></p>
+          </figure>
+          <div className="card-body items-center text-center">
+            <h2 className="text-white font-bold text-4xl">Rect</h2>
+            <div className="card-actions">
+              
+            </div>
+          </div>
+        </div>
 
+        <div className="card bg-[#1C222A] shadow-4xl">
+          <figure className="px-10 pt-10">
+            
+            <p className="text-6xl text-pink-400">
+            <SiExpress/></p>
+          </figure>
+          <div className="card-body items-center text-center">
+            <h2 className="text-white font-bold text-4xl">Express</h2>
+            <div className="card-actions">
+              
+            </div>
+          </div>
+        </div>
 
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:ml-24 gap-10">
-                       
-                          <span className="text-5xl text-[#F8B90C] my-2"><FaHtml5 /></span>
-                            <span className="text-5xl text-[#F8B90C] my-2"><FaCss3 /></span>
-                            <span className="text-5xl text-[#F8B90C] my-2"><RiTailwindCssFill /></span>
-                            <span className="text-5xl text-[#F8B90C] my-2"><TbBrandJavascript /></span>
-                     
-                    
-                            <span className="text-5xl text-[#F8B90C] my-2"><FaReact /></span>
-                            <span className="text-5xl text-[#F8B90C] my-2"><DiMongodb /></span>
-                            <span className="text-5xl text-[#F8B90C] my-2"><FaNode /></span>
-                            <span className="text-5xl text-[#F8B90C] my-2"><SiExpress /></span>
-                     
-                        </div>
+        <div className="card bg-[#1C222A] shadow-4xl">
+          <figure className="px-10 pt-10">
+            
+            <p className="text-6xl text-blue-200">
+            <FaNode/></p>
+          </figure>
+          <div className="card-body items-center text-center">
+            <h2 className="text-white font-bold text-4xl">Node.js</h2>
+            <div className="card-actions">
+              
+            </div>
+          </div>
+        </div>
 
-                   
-                    </div>
-
-                </div>
+        <div className="card bg-[#1C222A] shadow-4xl">
+          <figure className="px-10 pt-10">
+            
+            <p className="text-6xl text-green-400">
+            <SiMongodb/>
+            </p>
+          </figure>
+          <div className="card-body items-center text-center">
+            <h2 className="text-white font-bold text-4xl">MongoDB</h2>
+            <div className="card-actions">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+            </div>
             </Fade>
+        
         </div>
     );
 };

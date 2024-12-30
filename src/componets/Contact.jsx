@@ -3,6 +3,9 @@ import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import { FaPhone } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
 const Contact = () => {
   const navigate = useNavigate();
   const form = useRef();
@@ -45,30 +48,40 @@ const Contact = () => {
 
       <Fade direction="up">
 
-        <h3 className="text-center text-4xl font-bold underline text-[#F8B416]">Contact Us  </h3>
-
-        <div className="flex flex-col lg:flex-row justify-around mt-10">
-          <div className="lg:w-1/2 my-14">
-            <h3 className="text-3xl text-center font-bold">Name: MD.HARUN OR ROSHID</h3>
-            <h4 className="text-2xl text-center my-4 font-bold">+8801317537210</h4>
-            <p className="text-2xl text-center font-bold">
-              Dhaka, Bangladesh
-            </p>
+        <h3 className="text-center text-4xl mb-10 font-bold underline text-[#F8B416]">Contact Us  </h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 mx-6">
+          <div className="w-[300px] bg-[#181818]  shadow-[#363636]  rounded-lg text-center  py-6">
+             <span className="flex items-center justify-center text-[#F5B714] text-2xl"><FaPhone /></span>
+             <h3 className="my-3">Phone</h3>
+             <h3>+8801317537210</h3>
           </div>
-          <div className="lg:w-1/2">
-            <div>
+          <div className="w-[300px] bg-[#181818]  shadow-[#363636]  rounded-lg text-center  py-6">
+             <span className="flex items-center justify-center text-[#F5B714] text-2xl"><MdEmail /></span>
+             <h3 className="my-3">Email</h3>
+             <h3>mdharunorroshid301204@gmail.com</h3>
+          </div>
+          <div className="w-[300px] bg-[#181818]  shadow-[#363636]  rounded-lg text-center  py-6">
+             <span className="flex items-center justify-center text-[#F5B714] text-2xl"><IoLocationOutline /></span>
+             <h3 className="my-3">Address</h3>
+             <h3>Dhaka, Bangladesh</h3>
+          </div>
+        </div>
+        <div className=" my-10">
+        
+          <div className="">
+            <div className="bg-[#2B2C2F] shadow-2xl border-2 border-[#363636] p-10 rounded-xl h-[350px] flex justify-center mx-10 lg:mx-20">
               <form ref={form} onSubmit={sendEmail} className="mr-6">
                 <label className="text-xl font-bold my-4">Name</label>
                 <br />
-                <input type="text" name="user_name" className="text-black rounded-sm w-full" />
+                <input type="text" name="user_name" placeholder="Name" className="text-black rounded-sm w-full lg:w-[500px] bg-gray-500" />
                 <br />
                 <label className="text-xl font-bold my-4">Email</label>
                 <br />
-                <input type="email" name="user_email" className="text-black rounded-sm w-full" />
+                <input type="email" name="user_email" placeholder="email" className="text-black rounded-sm w-full lg:w-[500px] bg-gray-500" />
                 <br />
                 <label className="text-xl font-bold my-4">Message</label>
                 <br />
-                <textarea name="message" className="text-black rounded-sm w-full pl-2" />
+                <textarea name="message" placeholder="Your Message" className="text-black bg-gray-500 rounded-sm pl-2 w-full lg:w-[500px]" />
                 <br />
                 <input type="submit" value="Send" className="text-black font-bold text-2xl btn" />
               </form>
