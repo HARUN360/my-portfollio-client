@@ -299,7 +299,7 @@ And can add her flowers. He can see how many photos have been added or requested
         <div className="modal-action">
           <form method="dialog">
             {/* if there is a button, it will close the modal */}
-            <button className="btn">off</button>
+            <button className="btn">close</button>
           </form>
         </div>
       </div>

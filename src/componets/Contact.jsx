@@ -46,21 +46,21 @@ const Contact = () => {
     <div>
 
 
-      <Fade direction="up">
+      <Fade direction="down">
 
         <h3 className="text-center text-4xl mb-10 font-bold underline text-[#F8B416]">Contact Us  </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 mx-6">
-          <div className="w-[300px] bg-[#181818]  shadow-[#363636]  rounded-lg text-center  py-6">
+        <div className="grid grid-cols-1 gap-2 lg:grid-cols-3 max-w-[1000px] mx-auto">
+          <div className="max-w-[300px] bg-[#181818]  shadow-[#363636]  rounded-lg text-center  py-6 m-4">
              <span className="flex items-center justify-center text-[#F5B714] text-2xl"><FaPhone /></span>
              <h3 className="my-3">Phone</h3>
              <h3>+8801317537210</h3>
           </div>
-          <div className="w-[300px] bg-[#181818]  shadow-[#363636]  rounded-lg text-center  py-6">
+          <div className="max-w-[300px] bg-[#181818]  shadow-[#363636]  rounded-lg text-center  py-6 m-4">
              <span className="flex items-center justify-center text-[#F5B714] text-2xl"><MdEmail /></span>
              <h3 className="my-3">Email</h3>
              <h3>mdharunorroshid301204@gmail.com</h3>
           </div>
-          <div className="w-[300px] bg-[#181818]  shadow-[#363636]  rounded-lg text-center  py-6">
+          <div className="max-w-[300px] bg-[#181818]  shadow-[#363636]  rounded-lg text-center  py-6 m-4">
              <span className="flex items-center justify-center text-[#F5B714] text-2xl"><IoLocationOutline /></span>
              <h3 className="my-3">Address</h3>
              <h3>Dhaka, Bangladesh</h3>
